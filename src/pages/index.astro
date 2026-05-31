@@ -47,7 +47,6 @@ const leadershipItems = [
   }
 ];
 
-// Separating social types to render pure icons vs clear descriptive text blocks cleanly
 const iconLinks = [
   { label: "LinkedIn", url: "https://www.linkedin.com/in/sonjaaits/", icon: "fa-brands fa-linkedin", subtext: "" },
   { label: "GitHub", url: "https://github.com/SonjaAits", icon: "fa-brands fa-github", subtext: "Personal" },
@@ -67,7 +66,7 @@ const textLinks = [
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sonja Aits - Strategic leader in AI/data science and medicine/life science" />
+  <meta name="description" content="Sonja Aits - Platform Architect and Executive - AI for Medicine & Life Science" />
   <title>Sonja Aits | Portfolio</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -90,23 +89,96 @@ const textLinks = [
   <main class="container">
     
     <section class="hero-section" aria-labelledby="bio-heading">
-      <h1 id="bio-heading">Sonja Aits</h1>
+      <!-- 1. Primary Heading Overall -->
+      <h1 id="bio-heading" class="main-title">Sonja Aits</h1>
 
+      <!-- 2. Profile Photo -->
       <img 
         src="/images/SonjaAits.jpg" 
         alt="Portrait of Sonja Aits" 
         class="profile-image" 
       />
 
-      <p class="lead-text">
-        Strategic leader with dual nativity in medicine/life science (20+ years) and AI/data science (8 years)
+      <!-- 3. Strategic Leader Primary Subheading -->
+      <h2 class="strategic-subheading">
+        AI for Life Science platform architect with dual nativity in medicine/life science (20+ years) and AI/data science (8 years)
+      </h2>
+
+      <!-- 4. Secondary Subheading Metrics Block -->
+      <p class="secondary-subheading">
+        Research Director (AI x Life Sciences) | Bridging Drug Discovery, Precision Medicine & AI Platforms | 20M+ Model Downloads | TechBio Founder | AI Ecosystems Builder (4000+ members)
       </p>
+
+      <!-- 5. Summary Text Block -->
+      <div class="lead-text">
+        <p style="margin-bottom: 2.5rem;">
+          I am a research director, TechBio founder, board member and ecosystems architect with rare dual technical expertise in both data science and life science. Over 21 years I have become familiar with every level of the AI-for-life-science stack: Drug discovery/Assay development (incl. 13 years leading/conducting wet-lab research), Translational medicine/Clinical medicine/Public health, Foundation models/Data science/Agile software development (8 years applied data science leader), Stakeholder engagement/Ecosystem orchestration, Commercialization, Regulatory/ESG compliance, and Education.
+        </p>
+        <p style="margin-bottom: 2.5rem;">
+          I have repeatedly built organizations, platforms, scientific capabilities and cross-sector collaborations from scratch and scaled them into sustainable, high-impact operations. My competency has been recognized on both organizational and national level. 
+        </p>
+        <p style="margin-top: 1rem; color: var(--text-primary); font-size: 1.1rem; font-weight: 500;">
+          I am open to <strong>VP/Director-level opportunities</strong> to guide, build and deploy agentic AI platforms and foundation models for drug discovery, precision medicine, public health and sustainability 
+        </p>
+        <p class="consulting-note">
+          <em>Time-permitting, I accept select high-impact board seats, specialized executive consulting mandates, leadership training bootcamps, and keynotes.</em>
+        </p>
+      </div>
+
+      <!-- Expandable Biosketch Accordion -->
+      <details class="biosketch-accordion">
+        <summary class="toggle-button">
+          <span class="view-more">Expand Full Biosketch</span>
+          <span class="view-less">Hide Full Biosketch</span>
+        </summary>
+        
+        <div class="biosketch-content">
+          <p>
+          <h3>Bridging AI and Biomedical Innovation</h3>
+          <p>
+            My dual technical and biological expertise allows me to systematically identify structural risks and hidden opportunities on either side of the aisle. It enables me to design and execute robust AI (and non-AI) solutions tailored to the complex, messy realities of wet labs and clinical environments. 
+          </p>
+          <p>
+            To date, this approach has delivered open-source BioNLP transformer models with <strong>20+ million downloads</strong>, as well as information synthesis pipelines for life scientists that are both easy to use and to deploy. A defining technical achievement was engineering a novel lysosomal integrity assay that resolved a major sector bottleneck to become the global gold standard (<strong>650+ citations</strong>), which I subsequently scaled into a multiplex high-content screening platform integrated with deep learning computer vision across 40,000 experimental conditions. 
+          </p>
+          <p>
+            Currently, my focus centers on agentic AI platforms, multimodal foundation models, and interconnected knowledge systems for healthcare, life science, and systemic crisis preparedness. I also recently founded a TechBio venture to commercialize part of my research, with assets in proof-of-concept, production and platformization stages.
+          </p>
+
+          <h3>Excellence in Orchestration & Business Operations</h3>
+          <p>
+            Together with partners, I have built 4 interdisciplinary project consortia and AI ecosystems from scratch, growing them into vibrant organizations with <strong>4000+ members</strong> (combined). These platforms have spawned multi-million grants, novel AI collaborations and up-skilling initiatives. Here, I leverage my breadth to translate and identify shared goals between highly diverse stakeholders, including data scientists, software developers, medical researchers, clinicians, infrastructure operators, business developers, and regulatory and sustainability experts.
+          </p>
+          
+          <p><strong>Other Key Operational Highlights:</strong></p>
+          <ul class="bio-bullets">
+            <li><strong>Strategic Partnerships:</strong> Strategic Partnerships: Partnered with Institute Roche to deliver a "Cancer Immunology meets Data Science" flagship program, executing an international symposium, guest scholar program, and a hackathon utilizing real-world clinical trial data. Initiated a partnership on AI connecting my university with the regional public healthcare system</li>
+            <li><strong>Financial Stewardship:</strong> Procured/managed 35M+ SEK budgets for research, innovation and stakeholder engagement from highly competitive funders.</li>
+            <li><strong>Organizational Governance:</strong> Direct the daily operation of a 700-member computational research school and guided strategic budget allocation, faculty recruitment, and institutional direction as a Department Board Member for a department of 60+ research groups.</li>
+            <li><strong>Talent Pipeline:</strong> Supervised and up-skilled 50+ junior researchers (BSc through Postdoc) in life science, deep learning architectures, software engineering, and Agile methodologies, and spearheaded a broad range of educational activities (7 PhD courses, AI workshops for leaders, etc.).</li>
+          </ul>
+
+          <h3>Institutional Recognition & National/International Impact</h3>
+          My competency has been recognized both within and outside of academia. Examples include recruitment to:
+          </p>
+          <ul class="bio-bullets">
+            <li><strong>Build AI curricula</strong> for the medical programs of all Swedish universities.</li>
+            <li><strong>Develop a global Massive Open Online Course (MOOC)</strong> for Coursera covering AI in life sciences (in development).</li>
+            <li><strong>Co-author the official government consultation response</strong> on the EU AI Act for Scandinavia’s largest university.</li>
+            <li><strong>Act as expert guest on AI chatbots</strong> for Sweden’s largest science entertainment TV program, reaching ~10% of the national population.</li>
+          </ul>
+          <h3>The Bottom Line</h3>
+          <p>
+            I know how to swing a pipette, work with clinicians and other stakeholders, debug code and build deep learning systems. I actively deploy this cross-functional domain knowledge to bridge between diverse stakeholder communities, and to keep life science AI assets grounded in operational reality. 
+          </p>
+        </div>
+      </details>
     </section>
 
     <hr class="separator" />
 
     <section id="research" aria-labelledby="research-heading">
-      <h2 id="research-heading">Research and innovation</h2>
+      <h2 id="research-heading">Research and Innovation</h2>
       <div class="grid">
         {researchItems.map(item => (
           <article class="card">
@@ -128,7 +200,7 @@ const textLinks = [
     <hr class="separator" />
 
     <section id="leadership" aria-labelledby="leadership-heading">
-      <h2 id="leadership-heading">Leadership and knowledge transfer</h2>
+      <h2 id="leadership-heading">Leadership and Knowledge transfer</h2>
       <div class="grid">
         {leadershipItems.map(item => (
           <article class="card">
@@ -250,35 +322,145 @@ const textLinks = [
   /* Content & Typography Layouts */
   .hero-section { 
     padding: 4rem 0 2rem 0;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center; 
   }
-  h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; }
-  .lead-text { font-size: clamp(1.2rem, 2.5vw, 1.5rem); color: var(--text-muted); max-width: 800px; }
+
+  /* Core Title Structure Formatting */
+  .main-title {
+    font-size: clamp(2.5rem, 6vw, 4rem); 
+    font-weight: 800; 
+    line-height: 1.1; 
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  .strategic-subheading {
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    font-weight: 600;
+    line-height: 1.3;
+    max-width: 800px;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .secondary-subheading {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    max-width: 850px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .lead-text { 
+    font-size: clamp(1.05rem, 2vw, 1.15rem); 
+    color: var(--text-primary); 
+    max-width: 800px; 
+    text-align: left; 
+    line-height: 1.7; 
+  }
+
   h2 { font-size: clamp(1.8rem, 4vw, 2.2rem); margin-bottom: 2rem; font-weight: 700; }
   .separator { border: 0; height: 1px; background: var(--border-color); margin: 4rem 0; }
 
-  /* Round Profile Placeholder Layout */
+  /* Biosketch Accordion Layout */
+  .biosketch-accordion {
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .biosketch-accordion[open] {
+    margin-bottom: 1rem;
+  }
+
+  .toggle-button {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.65rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    margin: 0.5rem 0;
+  }
+  
+  .toggle-button::-webkit-details-marker {
+    display: none;
+  }
+
+  .toggle-button:hover, .toggle-button:focus {
+    background-color: #2a2a2a;
+    border-color: #555;
+    outline: none;
+  }
+
+  .view-less { display: none; }
+  .biosketch-accordion[open] .view-more { display: none; }
+  .biosketch-accordion[open] .view-less { display: inline; }
+
+  .biosketch-content {
+    background-color: rgba(30, 30, 30, 0.4);
+    border-left: 2px solid var(--border-color);
+    padding: 1.5rem 0 1rem 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1rem;
+    color: var(--text-muted);
+  }
+
+  .biosketch-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 0.75rem;
+  }
+
+  .bio-bullets {
+    list-style-type: square;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bio-bullets li strong {
+    color: var(--text-primary);
+  }
+
+  .consulting-note {
+    font-size: 0.95rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Round Profile Layout */
   .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     background-color: #252525;
     border: 2px solid var(--border-color);
-    margin-top: 2.5rem;
     margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-size: 0.85rem;
-    text-align: center;
-    padding: 1rem;
+    display: block;
     transition: width 0.2s ease, height 0.2s ease;
   }
 
@@ -296,8 +478,8 @@ const textLinks = [
     }
     
     .profile-image {
-      width: 200px;
-      height: 200px;
+      width: 240px;
+      height: 240px;
     }
 
     .footer-content {
@@ -331,24 +513,12 @@ const textLinks = [
   }
   .card:hover { transform: translateY(-2px); border-color: #444; }
 
-  /* Aspect-Ratio Box to Prevent Layout Shifting (CLS) */
-  .image-placeholder {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background-color: #252525;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-size: 0.9rem;
-  }
-
   .card-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
-    display: block; /* Removes baseline gap below images */
+    display: block;
   }
 
   .card-content { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; }
@@ -366,8 +536,8 @@ const textLinks = [
   .footer-content { 
     display: flex; 
     flex-direction: column; 
-    align-items: center;      
-    text-align: center;       
+    align-items: center;       
+    text-align: center;        
     gap: 2.5rem; 
   }
 
@@ -393,7 +563,6 @@ const textLinks = [
     gap: 1.5rem;
   }
   
-  /* Styling Specific to Icon Buttons */
   .social-icon-link { 
     color: var(--text-muted); 
     text-decoration: none; 
@@ -425,7 +594,6 @@ const textLinks = [
     color: var(--text-primary);
   }
 
-  /* Distinct Styling for Text Links - Keep Pure White */
   .social-text-link {
     color: var(--text-primary);
     text-decoration: none;
